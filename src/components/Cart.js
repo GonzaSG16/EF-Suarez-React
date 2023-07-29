@@ -73,7 +73,6 @@ const Cart = () => {
                 address: '',
             });
         } catch (error) {
-            console.error('Error creating order:', error);
             Swal.fire({
                 icon: 'error',
                 title: 'Error',

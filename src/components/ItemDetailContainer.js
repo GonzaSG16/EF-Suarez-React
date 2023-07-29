@@ -16,7 +16,7 @@ function ItemDetailContainer() {
             if (docSnap.exists()) {
                 setProduct(docSnap.data());
             } else {
-                console.log('No such document!');
+
             }
         };
 
