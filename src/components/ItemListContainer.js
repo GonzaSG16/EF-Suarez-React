@@ -35,12 +35,19 @@ function ItemListContainer() {
             <div className="row">
                 {categoryProducts.map(product => (
                     <div className="col-lg-4" key={product.id}>
-                        <div className="card" style={{ margin: '10px' }}>
-                            <img src={product.image} className="card-img-top" alt={product.name} style={{ height: '100%', objectFit: 'cover' }} />
+                        <div className="card h-100" style={{ margin: '10px' }}>
+                            <img
+                                src={product.image}
+                                className="card-img-top"
+                                alt={product.name}
+                                style={{ height: '300px', objectFit: 'contain' }}
+                            />
                             <div className="card-body">
                                 <h5 className="card-title">{product.name}</h5>
                                 <p className="card-text">${product.price}</p>
-                                <a href={`/item/${product.id}`} className="btn btn-primary">Ver detalles</a>
+                                <a href={`/item/${product.id}`} className="btn btn-primary">
+                                    Ver detalles
+                                </a>
                             </div>
                         </div>
                     </div>
